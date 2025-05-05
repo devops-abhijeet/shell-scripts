@@ -76,3 +76,11 @@ do
 	echo "Found Script : $file"
 done
 # Example 9 : Use indexed loop over array
+
+# Example 10 : Shortcut without Array 
+
+color="red blue green"
+for arr in $color
+do
+	echo "The color is : $arr"
+done
