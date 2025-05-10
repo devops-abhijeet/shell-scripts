@@ -2,13 +2,28 @@
 
 # Author  : Abhijeet K
 
-## System Variable
+# Define Normal Variable
+age=10
+name="abhi"
+city="Mumbai"
+
+echo "The age is : $age"
+echo "The Name is : $name"
+echo "The City is : $city"
+
+#Define Constant varible ( Means value of varible cannot change )
+readonly var="abhi"
+
+echo "My name is $var"
+
+var="Dev"
+
+echo "My name is $var"
+
+## System Variable ( we can use system variables in our script )
 echo $USER
 echo $LANG
 
-## User Defined Variable
-username="Abhi"
-echo "My Name is : $username"
 
 ## Unsetting Variables
 
@@ -21,14 +36,3 @@ unset $var1
 
 echo $var1 $var2
 
-## Read Only Variable
-
-v1=1234
-
-readonly v1
-
-echo $v1
-
-v1=2
-
-echo $v1
